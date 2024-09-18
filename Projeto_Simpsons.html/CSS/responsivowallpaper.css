@@ -1,0 +1,56 @@
+/* Ajustes para dispositivos com telas menores que 768px (por exemplo, tablets em orientação retrato e smartphones) */
+@media (max-width: 768px) {
+    .conteiner1 {
+      flex-direction: column; /* Empilha os itens verticalmente em vez de horizontalmente */
+      align-items: center; /* Alinha os itens no centro */
+      padding: 10px; /* Adiciona um pouco de padding para evitar que os itens fiquem muito próximos das bordas */
+    }
+  
+    .menu {
+      padding: 20px; /* Reduz o padding para dispositivos menores */
+      text-align: center; /* Centraliza o texto no menu */
+      margin-top: 10px; /* Reduz o margin-top */
+    }
+  
+    .menu a {
+      font-size: 20px; /* Reduz o tamanho da fonte dos links do menu */
+      margin-right: 0; /* Remove a margem direita dos links */
+      display: block; /* Faz com que cada link ocupe uma linha inteira */
+      margin-bottom: 10px; /* Adiciona espaçamento entre os links */
+    }
+  
+    .homer, .the, .rosca {
+      width: 100px; /* Reduz o tamanho das imagens */
+      height: auto; /* Mantém a proporção da imagem */
+      margin: 10px; /* Adiciona margem para separar as imagens */
+    }
+  
+    .conteiner {
+      margin-left: 0; /* Remove a margem esquerda */
+      margin-right: 0; /* Remove a margem direita */
+      padding: 10px; /* Adiciona padding para evitar que os elementos fiquem muito próximos das bordas */
+    }
+  
+    .wallpapers {
+      width: 100%; /* Faz com que as imagens ocupem a largura total disponível */
+      height: auto; /* Mantém a proporção da imagem */
+      margin-top: 20px; /* Reduz o margin-top */
+    }
+  }
+  
+  /* Ajustes para dispositivos com telas menores que 480px (por exemplo, smartphones em orientação retrato) */
+  @media (max-width: 480px) {
+    .homer, .the, .rosca {
+      width: 80px; /* Reduz ainda mais o tamanho das imagens */
+    }
+  
+    .menu a {
+      font-size: 18px; /* Ajusta o tamanho da fonte dos links do menu */
+      margin-bottom: 5px; /* Reduz o espaçamento entre os links */
+    }
+  
+    .wallpapers {
+      width: 100%; /* Faz com que as imagens ocupem a largura total disponível */
+      height: auto; /* Mantém a proporção da imagem */
+    }
+  }
